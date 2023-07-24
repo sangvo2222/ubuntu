@@ -12,4 +12,6 @@ https://fostips.com/right-click-resize-rotate-photo-ubuntu/
   dwebp image.webp -o final.png
   ls -l final.png
   dwebp image.webp -o final.jpeg
-  ls -l final.jpeg 
+  ls -l final.jpeg
+  cwebp -q 60 linux.png -o linux.webp
+  cwebp -q 60 linux.jpeg -o linux.webp
