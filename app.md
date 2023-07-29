@@ -17,3 +17,5 @@ https://fostips.com/right-click-resize-rotate-photo-ubuntu/
   cwebp -q 60 linux.jpeg -o linux.webp
   mogrify -format jpg *.png
   dwebp *.webp -o *.jpg
+  $ for FILE in *.webp; do dwebp "$FILE" -o "${FILE%.*}.jpg"; done
+
